@@ -1,24 +1,20 @@
 #include "main.h"
 
 /**
- * main - prints Putchar
- *
- * Description: prints _putchar
- *
- * Return: 0 (Success)
+ * print_alphabet - Entry point
+ * Return:0
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+
+	}
 	_putchar('\n');
 
-	return (0);
 }
